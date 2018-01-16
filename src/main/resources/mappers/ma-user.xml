@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.myaction.domain.UserMapper">
+
+    <resultMap id="userResult"              type="com.myaction.domain.UserVO">
+        <result property="maUserId"          column="ma_user_id"/>
+        <result property="maUserName"        column="ma_user_name"/>
+        <result property="password"           column="ma_user_pass" />
+    </resultMap>
+
+    <select id="userSelect" parameterType="com.myaction.domain.UserVO" resultMap="userResult">
+        SELECT ma_user_id, ma_user_name, ma_user_pass FROM ma_user WHERE 1=1
+    </select>
+
+</mapper>
