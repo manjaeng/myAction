@@ -120,7 +120,8 @@ Chatbot = function(){
 	   Private Functions
 	 ************************************************************ */
 	fnGetUrl = function(path){
-		return 'http://localhost:8081/searchAPI' + path;
+		return 'http://10.74.105.71:8080/searchAPI' + path;
+		// TODO 외부 URL
 	};
 	
 	fnUpdateUI = function(type, msg){
