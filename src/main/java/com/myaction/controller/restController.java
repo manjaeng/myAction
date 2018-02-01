@@ -22,12 +22,12 @@ public class restController {
 
         StringBuffer contentBuffer = new StringBuffer();
         contentBuffer.append("{");
-        contentBuffer.append("'data': 'dleiver data'");
-        contentBuffer.append("'location': 'here'");
-        contentBuffer.append("'date': 'now'");
-        contentBuffer.append("'data1': 'dleiver data1'");
-        contentBuffer.append("'data2': 'dleiver data2'");
-        contentBuffer.append("'data3': 'dleiver data3'");
+        contentBuffer.append("'data': 'dleiver data',");
+        contentBuffer.append("'location': 'here',");
+        contentBuffer.append("'date': 'now',");
+        contentBuffer.append("'data1': 'dleiver data1',");
+        contentBuffer.append("'data2': 'dleiver data2',");
+        contentBuffer.append("'data3': 'dleiver data3',");
         contentBuffer.append("'data4': 'dleiver data4'");
         contentBuffer.append("}");
 
