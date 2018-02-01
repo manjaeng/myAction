@@ -120,7 +120,7 @@ Chatbot = function(){
 	   Private Functions
 	 ************************************************************ */
 	fnGetUrl = function(path){
-		return 'http://10.74.105.71:8080/searchAPI' + path;
+		return 'http://localhost:8080/searchAPI' + path;
 		// TODO 외부 URL
 	};
 	
@@ -195,7 +195,7 @@ Chatbot = function(){
 	
 	fnInquiry = function(msg){
 		var ajax = jQuery.ajax({
-			url: fnGetUrl('/rest/chatbot/requestMsg'),
+			url: fnGetUrl('/rest/chatbot/corpChatbot'),
 			data: {
 				kwd: msg.replace(msgFilter, ' ').replace(/^\s+|\s{2,}/g, ' '),
 				callback: 'fnChatbotResult'
