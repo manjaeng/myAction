@@ -1,3 +1,5 @@
+var apiHost = 'http://10.74.105.71:8080/searchAPI';
+
 document.write('<div id="layMessenger" class="layer_messenger">');
 document.write('	<div class="tit">파이언넷 도우미</div>');
 document.write('	<div class="lay_msg_cont">');
@@ -16,6 +18,7 @@ document.write('		<button type="button">입력</button>');
 document.write('	</div>');
 document.write('	<button type="button" class="btn_msg_close" onclick="closeMessenger();"><span>메신저 닫기</span></a>');
 document.write('</div>');
+
 
 /* 20170317_수정 */
 function openMessenger(){
@@ -120,7 +123,7 @@ Chatbot = function(){
 	   Private Functions
 	 ************************************************************ */
 	fnGetUrl = function(path){
-		return 'http://localhost:8080/searchAPI' + path;
+		return  apiHost + path;
 		// TODO 외부 URL
 	};
 	
