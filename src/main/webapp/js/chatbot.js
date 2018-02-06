@@ -201,6 +201,7 @@ Chatbot = function(){
 			url: fnGetUrl('/rest/chatbot/corpChatbot'),
 			data: {
 				kwd: msg.replace(msgFilter, ' ').replace(/^\s+|\s{2,}/g, ' '),
+                corpCode : '11ST',
 				callback: 'fnChatbotResult'
 			},
 			dataType: 'jsonp',
