@@ -3,7 +3,9 @@
 
 <%@ page import="com.myaction.domain.UserVO" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.Enumeration" %><%--
+<%@ page import="java.util.Enumeration" %>
+
+<%--
   Created by IntelliJ IDEA.
   User: manjaeng-desk
   Date: 2017-12-24
@@ -29,6 +31,7 @@
 
     <script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/handlebars-v4.0.11.js"></script>
     <script type="text/javascript" src="/js/chatbot.js"></script>
 
   </head>
@@ -36,5 +39,9 @@
   Name : <%=UserName%>
 
   <div class="fixed_msg"><button type="button" onclick="openMessenger();"><span>MESSENGER</span></button></div>
+  
+  <!-- handlebar template -->
+  <%@ include file="/view/deliver.jsp" %>
+  
   </body>
 </html>

@@ -1,4 +1,5 @@
-var apiHost = 'http://10.74.105.71:8080/searchAPI';
+//var apiHost = 'http://10.74.105.71:8080/searchAPI';
+var apiHost = 'http://localhost:8080/searchAPI'; //로컬테스트
 
 document.write('<div id="layMessenger" class="layer_messenger">');
 document.write('	<div class="tit">파이언넷 도우미</div>');
@@ -201,14 +202,22 @@ Chatbot = function(){
 			url: fnGetUrl('/rest/chatbot/corpChatbot'),
 			data: {
 				kwd: msg.replace(msgFilter, ' ').replace(/^\s+|\s{2,}/g, ' '),
+				chnId: 'pion',
                 corpCode : '11ST',
+                uToken : 'testUser',
 				callback: 'fnChatbotResult'
 			},
 			dataType: 'jsonp',
 			jsonpCallback: 'fnChatbotResult',
-		}).done(function(data){		
+		}).done(function(data){
 			if (data && data.answer){
-				fnUpdateUI(memType.admin, data.answer.replace(/\n/g, "<br />"));
+				//handlebar 연결
+				var source = $('#deliverTemplate').html();
+				var template = Handlebars.compile(source);
+				var html = template($.parseJSON(data.answer));
+				fnUpdateUI(memType.admin, html.replace(/\n/g, "<br />"));
+				
+				//fnUpdateUI(memType.admin, data.answer.replace(/\n/g, "<br />"));
 			} else {
 				fnUpdateUI(memType.admin, msgType.sorry.join('<br/>'));
 			}
