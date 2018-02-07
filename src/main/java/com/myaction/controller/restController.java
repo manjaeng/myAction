@@ -16,7 +16,7 @@ public class restController {
     private static final Logger log = LoggerFactory.getLogger(restController.class);
 
 
-    @RequestMapping(value = "/api/deliver")
+    @RequestMapping(value = "/api/deliver", method = RequestMethod.POST)
     public ResponseEntity<ResultDTO> deliver() {
         ResultDTO resultVO = new ResultDTO();
 
