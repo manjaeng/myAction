@@ -19,6 +19,7 @@ public class MyActionSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/","/api/*", "/font-awesome/fonts/*", "/js/*","/css/*","/img/*","/home", "/login", "/logout").permitAll()
                 .anyRequest().authenticated()
