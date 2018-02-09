@@ -12,4 +12,4 @@ spring:
   data:
     mongodb:
       uri: mongodb://root:pionnet@10.74.105.71:27017/admin
-      repositories.enabled: true
+      repositories.enabled: true 
