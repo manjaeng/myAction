@@ -7,7 +7,7 @@
 	<span>ID :  {{contents.data}}</span><br>
 	<br>
 	<table width="90%" cellpadding="5" cellspacing="0" border="1" align="center" style="border-collapse:collapse; border:1px darkblue solid;">
-		<tr bgcolor="blue">
+		<tr bgcolor="#0747A6">
 			<th><font color="white">Data</font></th>
 			<th><font color="white">Content</font></th>
 		<tr>
