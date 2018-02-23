@@ -1,18 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <script id="deliverTemplate" type="text/x-handlebars-template">
 주문하신 상품의 배송 정보는 다음과 같습니다.
+
+결과:  {{result}}
+ID :  {{contents.data}}
+
 <table width="90%" cellpadding="5" cellspacing="0" border="1" align="center" style="border-collapse:collapse; border:1px gray solid;">
 	<tr bgcolor="#999999">
-		<th>key</th>
-		<th>value</th>
-	</tr>
-	<tr>
-		<td>결과</td>
-		<td>{{result}}</td>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td>{{contents.data}}</td>
+		<th>Data</th>
+		<th>Content</th>
 	</tr>
 	<tr>
 		<td>Status</td>
