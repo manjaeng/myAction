@@ -1,16 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<n>결과:  id="deliverTemplate" type="text/x-handlebars-template">
+<script id="deliverTemplate" type="text/x-handlebars-template">
 
-	<span>주문하신 상품의 배송 정보는 다음과 같습니다.</span></n>
+	<span>주문하신 상품의 배송 정보는 다음과 같습니다.</span><br>
 
-	<span>결과:  {{result}}</span></n>
-	<span>ID :  {{contents.data}}</span></n>
+	<span>결과:  {{result}}</span><br>
+	<span>ID :  {{contents.data}}</span><br>
 
 	<table width="90%" cellpadding="5" cellspacing="0" border="1" align="center" style="border-collapse:collapse; border:1px gray solid;">
 		<tr bgcolor="#db202a">
 			<th><font color="white">Data</font></th>
 			<th><font color="white">Content</font></th>
-		</tr>
 		<tr>
 			<td>Status</td>
 			<td>{{contents.location}}</td>
