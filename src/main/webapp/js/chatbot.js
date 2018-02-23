@@ -213,8 +213,15 @@ Chatbot = function(){
 			if (data && data.answer){
 				//handlebar 연결
 				var source = $('#deliverTemplate').html();
+
 				var template = Handlebars.compile(source);
-				var html = template($.parseJSON(data.answer));
+				var rowDataAnswer = $.parseJSON(data.answer);
+				console.log(rowDataAnswer);
+                var rowContent = rowDataAnswer.contents;
+                console.log(rowContent);
+                var content = $.parseJSON(rowContent);
+                rowDataAnswer.contents = content;
+				var html = template(rowDataAnswer);
 				fnUpdateUI(memType.admin, html.replace(/\n/g, "<br />"));
 				
 				//fnUpdateUI(memType.admin, data.answer.replace(/\n/g, "<br />"));
