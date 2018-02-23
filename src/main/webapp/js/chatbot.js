@@ -222,8 +222,9 @@ Chatbot = function(){
                 var content = $.parseJSON(rowContent);
                 rowDataAnswer.contents = content;
 				var html = template(rowDataAnswer);
-				fnUpdateUI(memType.admin, html.replace(/\n/g, "<br />"));
+				fnUpdateUI(memType.admin, html);
 				
+				//fnUpdateUI(memType.admin, html.replace(/\n/g, "<br />"));
 				//fnUpdateUI(memType.admin, data.answer.replace(/\n/g, "<br />"));
 			} else {
 				fnUpdateUI(memType.admin, msgType.sorry.join('<br/>'));
