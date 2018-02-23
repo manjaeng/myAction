@@ -215,12 +215,12 @@ Chatbot = function(){
 				var source = $('#deliverTemplate').html();
 
 				var template = Handlebars.compile(source);
-				var rowDataAnswer = $.parseJSON(rowDataAnswer)
+				var rowDataAnswer = $.parseJSON(data.answer);
 				console.log(rowDataAnswer);
                 var rowContent = rowDataAnswer.contents;
                 var content = $.parseJSON(rowContent);
                 rowDataAnswer.contents = content;
-				var html = template($.parseJSON(rowDataAnswer));
+				var html = template(rowDataAnswer);
 				fnUpdateUI(memType.admin, html.replace(/\n/g, "<br />"));
 				
 				//fnUpdateUI(memType.admin, data.answer.replace(/\n/g, "<br />"));
