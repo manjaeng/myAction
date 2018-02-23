@@ -29,13 +29,13 @@ public class restController {
 
         StringBuffer contentBuffer = new StringBuffer();
         contentBuffer.append("{");
-        contentBuffer.append("\"data\": \"dleiver data\",");
-        contentBuffer.append("\"location\": \"here\",");
-        contentBuffer.append("\"date\": \"now\",");
+        contentBuffer.append("\"data\": \"Tracking ID AEIIPLA0002329062\",");
+        contentBuffer.append("\"location\": \"Delivered\",");
+        contentBuffer.append("\"date\": \"Out for delivery\",");
         contentBuffer.append("\"data1\": \"dleiver data1\",");
-        contentBuffer.append("\"data2\": \"dleiver data2\",");
-        contentBuffer.append("\"data3\": \"dleiver data3\",");
-        contentBuffer.append("\"data4\": \"dleiver data4\"");
+        contentBuffer.append("\"data2\": \"Initiated customs clearance process\",");
+        contentBuffer.append("\"data3\": \"Package arrived at a carrier facility\",");
+        contentBuffer.append("\"data4\": \"Shipment departed from Seller\"");
         contentBuffer.append("}");
 
         resultVO.setContents(contentBuffer.toString());
