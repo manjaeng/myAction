@@ -7,9 +7,9 @@
 	<span>ID :  {{contents.data}}</span></n>
 
 	<table width="90%" cellpadding="5" cellspacing="0" border="1" align="center" style="border-collapse:collapse; border:1px gray solid;">
-		<tr bgcolor="#999999">
-			<th>Data</th>
-			<th>Content</th>
+		<tr bgcolor="#db202a">
+			<th><font color="white">Data</font></th>
+			<th><font color="white">Content</font></th>
 		</tr>
 		<tr>
 			<td>Status</td>
