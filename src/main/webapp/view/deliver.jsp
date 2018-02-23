@@ -1,12 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <script id="deliverTemplate" type="text/x-handlebars-template">
-
+	<br>
 	<span>주문하신 상품의 배송 정보는 다음과 같습니다.</span><br>
-
+	<br>
 	<span>결과:  {{result}}</span><br>
 	<span>ID :  {{contents.data}}</span><br>
-
-	<table width="90%" cellpadding="5" cellspacing="0" border="1" align="center" style="border-collapse:collapse; border:1px gray solid;">
+	<br>
+	<table width="90%" cellpadding="5" cellspacing="0" border="1" align="center" style="border-collapse:collapse; border:1px #8b0000 solid;">
 		<tr bgcolor="#db202a">
 			<th><font color="white">Data</font></th>
 			<th><font color="white">Content</font></th>
