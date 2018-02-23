@@ -6,8 +6,8 @@
 	<span>결과:  {{result}}</span><br>
 	<span>ID :  {{contents.data}}</span><br>
 	<br>
-	<table width="90%" cellpadding="5" cellspacing="0" border="1" align="center" style="border-collapse:collapse; border:1px #8b0000 solid;">
-		<tr bgcolor="#db202a">
+	<table width="90%" cellpadding="5" cellspacing="0" border="1" align="center" style="border-collapse:collapse; border:1px darkblue solid;">
+		<tr bgcolor="blue">
 			<th><font color="white">Data</font></th>
 			<th><font color="white">Content</font></th>
 		<tr>
