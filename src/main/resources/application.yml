@@ -1,14 +1,13 @@
 server:
   port: 8099
 
-mysqlds:
+spring:
   datasource:
     url: jdbc:mysql://175.197.231.35:3300/ma_db?autoReconnect=true&useSSL=false
     username: mithril
     password: notidd00
     driverClassName: com.mysql.jdbc.Driver
 
-spring:
   data:
     mongodb:
       uri: mongodb://root:pionnet@10.74.105.71:27017/admin

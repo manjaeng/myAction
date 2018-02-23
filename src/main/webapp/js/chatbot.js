@@ -1,5 +1,5 @@
-//var apiHost = 'http://10.74.105.71:8080/searchAPI';
-var apiHost = 'http://localhost:8080/searchAPI'; //로컬테스트
+var apiHost = 'http://10.74.105.71:8080/searchAPI';
+//var apiHost = 'http://localhost:8080/searchAPI'; //로컬테스트
 
 document.write('<div id="layMessenger" class="layer_messenger">');
 document.write('	<div class="tit">파이언넷 도우미</div>');
