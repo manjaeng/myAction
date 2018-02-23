@@ -218,6 +218,7 @@ Chatbot = function(){
 				var rowDataAnswer = $.parseJSON(data.answer);
 				console.log(rowDataAnswer);
                 var rowContent = rowDataAnswer.contents;
+                console.log(rowContent);
                 var content = $.parseJSON(rowContent);
                 rowDataAnswer.contents = content;
 				var html = template(rowDataAnswer);
